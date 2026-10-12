@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dashboard | OIBSIP Authentication</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <div class="dashboard-container">
+
+        <nav class="navbar">
+
+            <div class="nav-brand">
+                🔐 AuthSystem
+            </div>
+
+            <button id="logoutBtn" class="logout-btn">
+                Logout
+            </button>
+
+        </nav>
+
+        <main class="dashboard-content">
+
+            <div class="welcome-card">
+
+                <div class="welcome-icon">
+                    👋
+                </div>
+
+                <h1>
+                    Welcome, <span id="dashboardUsername">User</span>!
+                </h1>
+
+                <p>
+                    You have successfully logged in to your protected dashboard.
+                </p>
+
+                <div class="user-info">
+
+                    <div class="info-item">
+                        <span class="info-label">Username</span>
+                        <span id="userUsername" class="info-value"></span>
+                    </div>
+
+                    <div class="info-item">
+                        <span class="info-label">Email</span>
+                        <span id="userEmail" class="info-value"></span>
+                    </div>
+
+                    <div class="info-item">
+                        <span class="info-label">Account Status</span>
+                        <span class="status-badge">Active</span>
+                    </div>
+
+                </div>
+
+            </div>
+
+            <div class="dashboard-grid">
+
+                <div class="dashboard-card">
+                    <div class="card-icon">🔒</div>
+                    <h3>Protected Access</h3>
+                    <p>
+                        This dashboard is accessible only after successful authentication.
+                    </p>
+                </div>
+
+                <div class="dashboard-card">
+                    <div class="card-icon">🛡️</div>
+                    <h3>Secure Password</h3>
+                    <p>
+                        Your password is stored as a SHA-256 hash instead of plain text.
+                    </p>
+                </div>
+
+                <div class="dashboard-card">
+                    <div class="card-icon">💻</div>
+                    <h3>Client-Side System</h3>
+                    <p>
+                        Authentication data is managed using JavaScript and localStorage.
+                    </p>
+                </div>
+
+            </div>
+
+        </main>
+
+        <footer class="dashboard-footer">
+            <p>OIBSIP • Web Development & Designing • Level 2 Task 4</p>
+        </footer>
+
+    </div>
+
+    <script src="auth.js"></script>
+</body>
+</html>

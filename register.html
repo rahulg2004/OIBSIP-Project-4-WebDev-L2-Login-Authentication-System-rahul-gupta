@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Register | OIBSIP Authentication</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <div class="auth-container">
+
+        <div class="auth-card register-card">
+
+            <div class="brand">
+                <div class="brand-icon">🛡️</div>
+                <h1>Create Account</h1>
+                <p>Register to get started</p>
+            </div>
+
+            <form id="registerForm">
+
+                <div class="form-group">
+                    <label for="registerUsername">Username</label>
+
+                    <input
+                        type="text"
+                        id="registerUsername"
+                        placeholder="Choose a username"
+                        autocomplete="username"
+                    >
+
+                    <small class="field-error" id="usernameError"></small>
+                </div>
+
+                <div class="form-group">
+                    <label for="registerEmail">Email Address</label>
+
+                    <input
+                        type="email"
+                        id="registerEmail"
+                        placeholder="Enter your email"
+                        autocomplete="email"
+                    >
+
+                    <small class="field-error" id="emailError"></small>
+                </div>
+
+                <div class="form-group">
+                    <label for="registerPassword">Password</label>
+
+                    <div class="password-wrapper">
+
+                        <input
+                            type="password"
+                            id="registerPassword"
+                            placeholder="Minimum 8 characters + 1 number"
+                            autocomplete="new-password"
+                        >
+
+                        <button
+                            type="button"
+                            class="toggle-password"
+                            id="toggleRegisterPassword"
+                        >
+                            👁
+                        </button>
+
+                    </div>
+
+                    <small class="password-hint">
+                        Minimum 8 characters and at least 1 number.
+                    </small>
+
+                    <small class="field-error" id="passwordError"></small>
+                </div>
+
+                <div class="form-group">
+                    <label for="confirmPassword">Confirm Password</label>
+
+                    <div class="password-wrapper">
+
+                        <input
+                            type="password"
+                            id="confirmPassword"
+                            placeholder="Re-enter your password"
+                            autocomplete="new-password"
+                        >
+
+                        <button
+                            type="button"
+                            class="toggle-password"
+                            id="toggleConfirmPassword"
+                        >
+                            👁
+                        </button>
+
+                    </div>
+
+                    <small class="field-error" id="confirmPasswordError"></small>
+                </div>
+
+                <div id="registerMessage" class="message"></div>
+
+                <button type="submit" class="btn-primary">
+                    Create Account
+                </button>
+
+            </form>
+
+            <div class="auth-footer">
+                <p>
+                    Already have an account?
+                    <a href="index.html">Login Here</a>
+                </p>
+            </div>
+
+        </div>
+
+    </div>
+
+    <script src="auth.js"></script>
+</body>
+</html>

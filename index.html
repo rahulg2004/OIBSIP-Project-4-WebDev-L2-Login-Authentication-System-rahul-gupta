@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login | OIBSIP Authentication</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <div class="auth-container">
+
+        <div class="auth-card">
+
+            <div class="brand">
+                <div class="brand-icon">🔐</div>
+                <h1>Welcome Back</h1>
+                <p>Login to access your dashboard</p>
+            </div>
+
+            <form id="loginForm">
+
+                <div class="form-group">
+                    <label for="loginEmail">Username or Email</label>
+                    <input
+                        type="text"
+                        id="loginEmail"
+                        placeholder="Enter username or email"
+                        autocomplete="username"
+                    >
+                    <small class="field-error" id="loginEmailError"></small>
+                </div>
+
+                <div class="form-group">
+                    <label for="loginPassword">Password</label>
+
+                    <div class="password-wrapper">
+                        <input
+                            type="password"
+                            id="loginPassword"
+                            placeholder="Enter your password"
+                            autocomplete="current-password"
+                        >
+                        <button
+                            type="button"
+                            class="toggle-password"
+                            id="toggleLoginPassword"
+                        >
+                            👁
+                        </button>
+                    </div>
+
+                    <small class="field-error" id="loginPasswordError"></small>
+                </div>
+
+                <div id="loginMessage" class="message"></div>
+
+                <button type="submit" class="btn-primary">
+                    Login
+                </button>
+
+            </form>
+
+            <div class="auth-footer">
+                <p>
+                    Don't have an account?
+                    <a href="register.html">Create Account</a>
+                </p>
+            </div>
+
+        </div>
+
+    </div>
+
+    <script src="auth.js"></script>
+</body>
+</html>
